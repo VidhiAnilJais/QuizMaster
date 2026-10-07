@@ -1,0 +1,8 @@
+# QuizMaster - recorded quiz attempts
+# Format: RESULT|id|student id|student name|quiz id|quiz title|correct|total|timestamp|answers
+# The answers field stores the per question breakdown as id:chosen:correct, separated by commas.
+RESULT|1|STU001|Rohan Verma|1|C++ OOP Fundamentals|3|5|2026-10-01 10:15|1:B:B,2:C:C,3:A:B,4:C:C,5:A:C
+RESULT|2|STU001|Rohan Verma|1|C++ OOP Fundamentals|5|5|2026-10-01 10:18|1:B:B,2:C:C,3:B:B,4:C:C,5:C:C
+RESULT|3|STU001|Rohan Verma|2|Database Management Basics|4|5|2026-10-02 14:05|9:A:A,10:B:B,11:C:C,12:A:B,13:B:B
+RESULT|4|STU002|Priya Nair|1|C++ OOP Fundamentals|4|5|2026-10-02 11:30|1:B:B,2:C:C,3:B:B,4:A:C,5:C:C
+RESULT|5|STU002|Priya Nair|2|Database Management Basics|5|5|2026-10-03 09:45|9:A:A,10:B:B,11:C:C,12:B:B,13:B:B

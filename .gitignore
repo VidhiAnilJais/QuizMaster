@@ -1,0 +1,32 @@
+# ---- build output --------------------------------------------------------
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+QuizMaster
+QuizMaster.exe
+
+# ---- IDE / editor --------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.cache/
+*.tmp
+
+# ---- OS noise ------------------------------------------------------------
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ---- QuizMaster ----------------------------------------------------------
+# The data files are part of the demonstration and therefore *are* committed,
+# but the safety copies that FileStore writes while saving must never be:
+*.tmp
+data/*.tmp
+
+# ---- documentation -------------------------------------------------------
+# Keep docs/class-diagram.png in the repository; ignore only local scratch files.
+docs/scratch/

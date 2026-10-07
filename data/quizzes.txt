@@ -1,0 +1,16 @@
+# QuizMaster - quizzes
+# A quiz is stored as one header record followed by the records of its questions:
+#   QUIZ|id|title|description|number of questions
+#   Q|id|text|option A|option B|option C|option D|correct answer
+QUIZ|1|C++ OOP Fundamentals|Covers the core object oriented concepts used in this project: classes, access specifiers, inheritance, polymorphism, abstraction and the STL.|5
+Q|1|Which OOP principle hides the internal data of an object and exposes only a controlled public interface?|Inheritance|Encapsulation|Polymorphism|Abstraction|B
+Q|2|In C++, which access specifier makes a member accessible from outside the class?|private|protected|public|friend|C
+Q|3|How is a pure virtual function declared inside a class?|virtual void show();|virtual void show() = 0;|abstract void show();|virtual void show() {}|B
+Q|4|A class that contains at least one pure virtual function is called what?|concrete|final|abstract|sealed|C
+Q|5|Which STL container behaves like a dynamic array that can grow and shrink on demand?|std::list|std::map|std::vector|std::set|C
+QUIZ|2|Database Management Basics|Relational database fundamentals: tables, primary keys, SQL commands, grouped queries and normalisation.|5
+Q|9|What does SQL stand for?|Structured Query Language|Sequential Query Logic|Standard Question Language|System Query Layer|A
+Q|10|What is the primary key of a database table?|A column used for sorting only|A column that uniquely identifies each row|The very first column of the table|An index used for backups|B
+Q|11|Which SQL command removes rows from an existing table?|REMOVE|DROP|DELETE|TRUNCATE ONLY|C
+Q|12|Which SQL keyword filters groups of rows after an aggregate such as COUNT or SUM is applied?|WHERE|HAVING|GROUP|ORDER|B
+Q|13|Which normal form removes a partial dependency on a composite key?|1NF|2NF|3NF|BCNF|B

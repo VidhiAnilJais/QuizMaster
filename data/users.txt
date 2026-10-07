@@ -1,0 +1,7 @@
+# QuizMaster - user accounts
+# Format: USER|role|id|name|username|password hash
+# The password is stored as an FNV-1a 64 bit hash, never as plain text.
+# Demo credentials are documented in README.md.
+USER|ADMIN|ADM001|System Administrator|admin|C210784AA23CD2CA
+USER|STUDENT|STU001|Rohan Verma|rahul|056166D3B1894D8F
+USER|STUDENT|STU002|Priya Nair|priya|C3B95AE1256C4FAE

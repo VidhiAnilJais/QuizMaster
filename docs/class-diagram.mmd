@@ -1,0 +1,190 @@
+classDiagram
+    direction TB
+
+    class User {
+        <<abstract>>
+        -string username
+        -string passwordHash
+        -bool loggedIn
+        +getUsername() const
+        +isLoggedIn() const
+        +getRole() const*
+        +getDisplayName() const*
+        +showMenu()*
+        +login(username, password) bool
+        +logout()
+        #setCredential(username, password)
+        #setLoggedIn(bool)
+        +static hashPassword(password) string
+        +static loadRecords() vector~UserRecord~
+        +static usernameExists(username) bool
+        +static nextIdForRole(role, prefix) string
+        +static ensureDefaultAdmin()
+        ~User()
+    }
+
+    class Student {
+        -string studentId
+        -string name
+        +getStudentId() const
+        +getName() const
+        +getRole() const
+        +showMenu()
+        +static registerStudent() bool
+        +attemptQuiz()
+        +viewResults() const
+        +viewAvailableQuizzes() const
+        +viewProfile() const
+        ~Student()
+    }
+
+    class Admin {
+        -string adminId
+        -string name
+        -vector~Question~ questionBank
+        -vector~Quiz~ quizzes
+        +getAdminId() const
+        +getName() const
+        +getRole() const
+        +showMenu()
+        +addQuestion()
+        +updateQuestion()
+        +deleteQuestion()
+        +createQuiz()
+        +viewResults() const
+        +quizStatistics() const
+        +deleteQuiz()
+        ~Admin()
+    }
+
+    class Quiz {
+        -int quizId
+        -string title
+        -string description
+        -vector~Question~ questions
+        +getQuizId() const
+        +getTitle() const
+        +getTotalQuestions() const
+        +setTitle(title)
+        +addQuestion(question)
+        +removeQuestion(questionId) bool
+        +findQuestion(questionId) const
+        +displayQuestions() const
+        +startQuiz(studentId, studentName) Result
+        +static loadAll() vector~Quiz~
+        +static saveAll(quizzes)
+        +static nextQuizId() int
+        ~Quiz()
+    }
+
+    class Question {
+        -int questionId
+        -string questionText
+        -string optionA
+        -string optionB
+        -string optionC
+        -string optionD
+        -char correctAnswer
+        +getQuestionId() const
+        +getQuestionText() const
+        +getOption(option) const
+        +getCorrectAnswer() const
+        +isCorrect(answer) bool
+        +setQuestionText(text)
+        +setOption(option, text)
+        +setCorrectAnswer(answer)
+        +display() const
+        +static normalizeAnswer(raw) char
+        +static loadAll() vector~Question~
+        +static saveAll(questions)
+        ~Question()
+    }
+
+    class Result {
+        -int resultId
+        -string studentId
+        -string studentName
+        -int quizId
+        -string quizTitle
+        -int correctAnswers
+        -int totalQuestions
+        -int score
+        -double percentage
+        -vector~AnswerRecord~ answers
+        +getResultId() const
+        +getScore() const
+        +getTotal() const
+        +getPercentage() const
+        +isPassed() bool
+        +setAnswers(answers)
+        +calculateScore()
+        +getPerformanceGrade() const
+        +getDetailedRows() const
+        +displayResult() const
+        +saveResult() const
+        +static loadAll() vector~Result~
+        ~Result()
+    }
+
+    class UserRecord {
+        <<struct>>
+        +string role
+        +string id
+        +string name
+        +string username
+        +string passwordHash
+    }
+
+    class AnswerRecord {
+        <<struct>>
+        +int questionId
+        +char chosen
+        +char correct
+    }
+
+    class UI {
+        <<utility>>
+        +static print(message)
+        +static box(title, lines)
+        +static readInt(prompt, min, max) int
+        +static readChoice(prompt, allowed) char
+        +static readPassword(prompt) string
+        +static confirm(question) bool
+    }
+
+    class FileStore {
+        <<utility>>
+        +static readLines(fileName) vector~string~
+        +static writeLines(fileName, lines)
+        +static appendLine(fileName, line)
+        +static escapeField(value) string
+        +static ensureDataFiles()
+    }
+
+    User <|-- Student : inherits
+    User <|-- Admin : inherits
+
+    Quiz *-- Question : 1 to 0..*
+    Quiz ..> Result : creates
+    Result ..> Student : belongs to
+    Result ..> Quiz : refers to
+
+    Student ..> Quiz : attempts
+    Admin ..> Quiz : manages
+    Admin ..> Question : manages
+    Admin ..> Result : reports
+
+    User ..> UserRecord : loads
+    Result *-- AnswerRecord : per question
+
+    User ..> FileStore : persists through
+    Result ..> FileStore : persists through
+    Quiz ..> FileStore : persists through
+    Question ..> FileStore : persists through
+
+    UI <.. User : rendering
+    UI <.. Student : rendering
+    UI <.. Admin : rendering
+    UI <.. Quiz : rendering
+    UI <.. Result : rendering
+    UI <.. Question : rendering

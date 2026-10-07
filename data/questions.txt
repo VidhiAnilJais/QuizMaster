@@ -1,0 +1,17 @@
+# QuizMaster - question bank
+# Format: Q|id|question text|option A|option B|option C|option D|correct answer
+# Fields are separated by '|'. A literal '|' or '\' inside a field is escaped.
+Q|1|Which OOP principle hides the internal data of an object and exposes only a controlled public interface?|Inheritance|Encapsulation|Polymorphism|Abstraction|B
+Q|2|In C++, which access specifier makes a member accessible from outside the class?|private|protected|public|friend|C
+Q|3|How is a pure virtual function declared inside a class?|virtual void show();|virtual void show() = 0;|abstract void show();|virtual void show() {}|B
+Q|4|A class that contains at least one pure virtual function is called what?|concrete|final|abstract|sealed|C
+Q|5|Which STL container behaves like a dynamic array that can grow and shrink on demand?|std::list|std::map|std::vector|std::set|C
+Q|6|Which keyword stops a derived class from overriding a virtual function?|static|const|final|explicit|C
+Q|7|What does the override keyword guarantee at compile time?|Faster execution of the function|Copy elision of the object|The base class really has a matching virtual function|Correct memory alignment|C
+Q|8|Which statement correctly describes composition in C++?|A derived class inherits a base class|A class stores an object of another class as a member|Two classes share the same name|A class inherits from two different bases|B
+Q|9|What does SQL stand for?|Structured Query Language|Sequential Query Logic|Standard Question Language|System Query Layer|A
+Q|10|What is the primary key of a database table?|A column used for sorting only|A column that uniquely identifies each row|The very first column of the table|An index used for backups|B
+Q|11|Which SQL command removes rows from an existing table?|REMOVE|DROP|DELETE|TRUNCATE ONLY|C
+Q|12|Which SQL keyword filters groups of rows after an aggregate such as COUNT or SUM is applied?|WHERE|HAVING|GROUP|ORDER|B
+Q|13|Which normal form removes a partial dependency on a composite key?|1NF|2NF|3NF|BCNF|B
+Q|14|In the ACID properties of a transaction, the letter D stands for what?|Data integrity|Durability|Determinism|Delegation|B

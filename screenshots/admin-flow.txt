@@ -1,0 +1,286 @@
+
++========================================================================+
+                               QuizMaster
+              Online Quiz Management and Evaluation System
+    ----------------------------------------------------------------
++========================================================================+
+
+  [OK] System ready. Data is loaded from 'C:\Users\VIDHIA~1\AppData\Local\Temp\opencode\qf2'.
+  [i] Demo accounts: admin/admin123  |  rahul/rahul123  |  priya/priya123
+
+
+QuizMaster
+Online Quiz Management and Evaluation System
+------------------------------------------------------------------------
+  [1] Student        - register, login and attempt quizzes
+  [2] Admin          - manage questions, quizzes and results
+  [3] About Project  - documentation, concepts and team
+  [4] System Status  - data files and stored records
+  [5] Exit
+------------------------------------------------------------------------
+Enter your choice: 
+ADMIN PORTAL
+Content management area
+------------------------------------------------------------------------
+  [1] Login
+  [2] Back to main menu
+------------------------------------------------------------------------
+Enter your choice: 
+ADMIN LOGIN
+Administrator credentials are required
+========================================================================
+  Username :   Password :   [OK] Login successful. Welcome, System Administrator!
+ADMIN DASHBOARD
+Welcome, System Administrator  (ADM001)
+------------------------------------------------------------------------
+  CONTENT MANAGEMENT
+   [1] Create Quiz
+   [2] Add Question
+   [3] View Questions
+   [4] Update Question
+   [5] Delete Question
+------------------------------------------------------------------------
+  REPORTS
+   [6] View Student Results
+   [7] Quiz Statistics
+   [8] Logout
+------------------------------------------------------------------------
+  ADVANCED
+   [9] View Quizzes
+  [10] Add Existing Question to a Quiz
+  [11] Remove Question from a Quiz
+  [12] Delete Quiz
+------------------------------------------------------------------------
+Enter your choice: 
+QUESTION BANK
+Every question that can be used to build a quiz
+========================================================================
+  ALL QUESTIONS
+    Q.ID  QUESTION                                        ANS  USED IN
+------------------------------------------------------------------------
+      Q1  Which OOP principle hides the internal data...    B  Quiz 1
+      Q2  In C++, which access specifier makes a memb...    C  Quiz 1
+      Q3  How is a pure virtual function declared ins...    B  Quiz 1
+      Q4  A class that contains at least one pure vir...    C  Quiz 1
+      Q5  Which STL container behaves like a dynamic ...    C  Quiz 1
+      Q6  Which keyword stops a derived class from ov...    C  -
+      Q7  What does the override keyword guarantee at...    C  -
+      Q8  Which statement correctly describes composi...    B  -
+      Q9  What does SQL stand for?                          A  Quiz 2
+     Q10  What is the primary key of a database table?      B  Quiz 2
+     Q11  Which SQL command removes rows from an exis...    C  Quiz 2
+     Q12  Which SQL keyword filters groups of rows af...    B  Quiz 2
+     Q13  Which normal form removes a partial depende...    B  Quiz 2
+     Q14  In the ACID properties of a transaction, th...    B  -
+------------------------------------------------------------------------
+  Total questions: 14
+
+Press Enter to continue...ADMIN DASHBOARD
+Welcome, System Administrator  (ADM001)
+------------------------------------------------------------------------
+  CONTENT MANAGEMENT
+   [1] Create Quiz
+   [2] Add Question
+   [3] View Questions
+   [4] Update Question
+   [5] Delete Question
+------------------------------------------------------------------------
+  REPORTS
+   [6] View Student Results
+   [7] Quiz Statistics
+   [8] Logout
+------------------------------------------------------------------------
+  ADVANCED
+   [9] View Quizzes
+  [10] Add Existing Question to a Quiz
+  [11] Remove Question from a Quiz
+  [12] Delete Quiz
+------------------------------------------------------------------------
+Enter your choice: 
+ALL QUIZZES
+Overview of every quiz in the system
+========================================================================
+     #   QUIZ ID  TITLE                           QUESTIONS  STATUS
+------------------------------------------------------------------------
+     1    QUIZ 1  C++ OOP Fundamentals                    5  published
+     2    QUIZ 2  Database Management Basics              5  published
+------------------------------------------------------------------------
+Open a quiz to list its questions? (Y/N): 
+SELECT A QUIZ
+Select a quiz
+========================================================================
+     #   QUIZ ID  TITLE                           QUESTIONS  STATUS
+------------------------------------------------------------------------
+     1    QUIZ 1  C++ OOP Fundamentals                    5  published
+     2    QUIZ 2  Database Management Basics              5  published
+------------------------------------------------------------------------
+Quiz number (1-2): 
+QUESTIONS OF QUIZ: C++ OOP FUNDAMENTALS
+Quiz ID 1  |  5 questions
+========================================================================
+  1)  [Question ID 1]
+  Q1. Which OOP principle hides the internal data of an object and exposes only a controlled public interface?
+      A. Inheritance
+      B. Encapsulation
+      C. Polymorphism
+      D. Abstraction
+  2)  [Question ID 2]
+  Q2. In C++, which access specifier makes a member accessible from outside the class?
+      A. private
+      B. protected
+      C. public
+      D. friend
+  3)  [Question ID 3]
+  Q3. How is a pure virtual function declared inside a class?
+      A. virtual void show();
+      B. virtual void show() = 0;
+      C. abstract void show();
+      D. virtual void show() {}
+  4)  [Question ID 4]
+  Q4. A class that contains at least one pure virtual function is called what?
+      A. concrete
+      B. final
+      C. abstract
+      D. sealed
+  5)  [Question ID 5]
+  Q5. Which STL container behaves like a dynamic array that can grow and shrink on demand?
+      A. std::list
+      B. std::map
+      C. std::vector
+      D. std::set
+------------------------------------------------------------------------
+
+Press Enter to continue...ADMIN DASHBOARD
+Welcome, System Administrator  (ADM001)
+------------------------------------------------------------------------
+  CONTENT MANAGEMENT
+   [1] Create Quiz
+   [2] Add Question
+   [3] View Questions
+   [4] Update Question
+   [5] Delete Question
+------------------------------------------------------------------------
+  REPORTS
+   [6] View Student Results
+   [7] Quiz Statistics
+   [8] Logout
+------------------------------------------------------------------------
+  ADVANCED
+   [9] View Quizzes
+  [10] Add Existing Question to a Quiz
+  [11] Remove Question from a Quiz
+  [12] Delete Quiz
+------------------------------------------------------------------------
+Enter your choice: 
+QUIZ STATISTICS
+Aggregated performance per quiz
+========================================================================
+   QUIZ ID  TITLE                     ATTEMPTS  STUDENTS   AVERAGE  HIGHEST   LOWEST   PASSED
+------------------------------------------------------------------------
+    QUIZ 1  C++ OOP Fundamentals             3         2     80.0%   100.0%    60.0%      3/3
+    QUIZ 2  Database Management B...         2         2     90.0%   100.0%    80.0%      2/2
+------------------------------------------------------------------------
++--------------------------------------------------------------------+
+| OVERALL SUMMARY                                                    |
+|--------------------------------------------------------------------|
+ Total attempts        : 5                                           |
+ Unique students       : 2                                           |
+ Quizzes with results  : 2                                           |
+ Overall average score : 84.00%                                      |
+ Overall pass rate     : 5/5  (100.0%)                               |
++--------------------------------------------------------------------+
+
+Press Enter to continue...ADMIN DASHBOARD
+Welcome, System Administrator  (ADM001)
+------------------------------------------------------------------------
+  CONTENT MANAGEMENT
+   [1] Create Quiz
+   [2] Add Question
+   [3] View Questions
+   [4] Update Question
+   [5] Delete Question
+------------------------------------------------------------------------
+  REPORTS
+   [6] View Student Results
+   [7] Quiz Statistics
+   [8] Logout
+------------------------------------------------------------------------
+  ADVANCED
+   [9] View Quizzes
+  [10] Add Existing Question to a Quiz
+  [11] Remove Question from a Quiz
+  [12] Delete Quiz
+------------------------------------------------------------------------
+Enter your choice: 
+STUDENT RESULTS
+Every recorded attempt of every student
+========================================================================
+
+FILTER
+Choose how the results should be displayed
+------------------------------------------------------------------------
+  [1] All results (5)
+  [2] Results of one student
+  [3] Results for one quiz
+  [4] Back
+------------------------------------------------------------------------
+Enter your choice: 
+RESULT LIST
+5 attempt(s) matched the filter
+========================================================================
+    ID               STUDENT  QUIZ                         SCORE   PERCENT               GRADE ATTEMPTED ON
+------------------------------------------------------------------------
+     1           Rohan Verma  C++ OOP Fundamentals           3/5     60.0%                Good 2026-10-01 10:15
+     2           Rohan Verma  C++ OOP Fundamentals           5/5    100.0%           Excellent 2026-10-01 10:18
+     3           Rohan Verma  Database Management Basics     4/5     80.0%           Very Good 2026-10-02 14:05
+     4            Priya Nair  C++ OOP Fundamentals           4/5     80.0%           Very Good 2026-10-02 11:30
+     5            Priya Nair  Database Management Basics     5/5    100.0%           Excellent 2026-10-03 09:45
+------------------------------------------------------------------------
+Open one of these results? (Y/N): 
+Press Enter to continue...ADMIN DASHBOARD
+Welcome, System Administrator  (ADM001)
+------------------------------------------------------------------------
+  CONTENT MANAGEMENT
+   [1] Create Quiz
+   [2] Add Question
+   [3] View Questions
+   [4] Update Question
+   [5] Delete Question
+------------------------------------------------------------------------
+  REPORTS
+   [6] View Student Results
+   [7] Quiz Statistics
+   [8] Logout
+------------------------------------------------------------------------
+  ADVANCED
+   [9] View Quizzes
+  [10] Add Existing Question to a Quiz
+  [11] Remove Question from a Quiz
+  [12] Delete Quiz
+------------------------------------------------------------------------
+Enter your choice:   [i] Session closed. You have been logged out.
+
+  [i] Returned from the ADMIN portal.
+
+Press Enter to continue...
+QuizMaster
+Online Quiz Management and Evaluation System
+------------------------------------------------------------------------
+  [1] Student        - register, login and attempt quizzes
+  [2] Admin          - manage questions, quizzes and results
+  [3] About Project  - documentation, concepts and team
+  [4] System Status  - data files and stored records
+  [5] Exit
+------------------------------------------------------------------------
+Enter your choice: 
+
+  [!] Input stream closed - leaving QuizMaster.
+                        THANK YOU
+========================================================================
+  All quiz data, questions and results have been saved in the
+  'C:\Users\VIDHIA~1\AppData\Local\Temp\opencode\qf2' folder and will be available
+  the next time you start QuizMaster.
+========================================================================
+  Goodbye.
+
+
