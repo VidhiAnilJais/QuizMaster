@@ -6,7 +6,7 @@ A console based quiz platform written in **C++** for the Object Oriented Program
 subject (TAE-2). It lets students register, attempt quizzes and see their results,
 while an administrator authors questions, composes quizzes and studies the results.
 
---
+---
 
 ## Table of Contents
 
