@@ -393,7 +393,8 @@ in [`docs/TEST_REPORT.md`](docs/TEST_REPORT.md).
 
 ## Team Members
 
-| Member |  |  
+
+| Member | Module | Responsibility |
 |---|---|---|
 | Member 1 - `[Vidhi Anil Jais]` | 
 | Member 2 - `[Aarya]` | 
