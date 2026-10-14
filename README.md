@@ -433,4 +433,4 @@ including which functions each member should be able to explain, is in
 
 ---
 
-*Developed as a college project for the Object Oriented Programming subject (TAE-2).
+*Developed as a college project for the Object Oriented Programming subject (TAE-2).*
